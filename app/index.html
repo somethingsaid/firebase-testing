@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="MyModule">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
 <body>
-	
+	<pre ng-controller="FireCtrl">
+		{{ myData | json }}
+	</pre>
 </body>
 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<script type="text/javascript" src="firebase_config.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angularfire/dist/angularfire.js"></script>
 </html>
